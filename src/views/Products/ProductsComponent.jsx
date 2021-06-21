@@ -130,12 +130,6 @@ const ProductsComponent = (props = {})  =>  {
    */
   const handleSearch = (value) => {
     const result = [];
-    // list.forEach(item => {
-    //   if (item.productName.toLowerCase() === value.toLowerCase()) {
-    //     result.push(item);
-    //   }
-    // });
-
     list.forEach(item => {
       if (item.productCategory.toLowerCase() === value.toLowerCase() && !result.includes(item)) {
         result.push(item);
